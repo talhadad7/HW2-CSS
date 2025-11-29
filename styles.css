@@ -42,6 +42,9 @@ p {
         animation: eggspin 1.5s linear infinite;
 
 }
+#egg:hover {
+  animation-duration: 0.3s;
+}
 @keyframes eggspin {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
@@ -132,3 +135,4 @@ footer {
     text-align: center;
 }
 }
+
