@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+      margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+}
+
+.title img {
+    width: 200px;   /* אתה יכול לשנות למספר שאתה רוצה */
+    height: auto;   /* שומר על פרופורציות */
+}
+p {
+ font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 130,
+    "CTRS" 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: small;
+}
+.title{
+  display: flex;
+  text-align: left;
+  background-color: rgb(255, 202, 114);
+  align-items: center;
+  justify-content: center;
+}
+#egg  {
+  margin-top: 20px;
+    width : 30px;   /* אתה יכול לשנות למספר שאתה רוצה */
+    height: auto;   /* שומר על פרופורציות */ 
+        animation: eggspin 1.5s linear infinite;
+
+}
+@keyframes eggspin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+#pan  {
+  translate: 15px -20px;
+    width: 100px;   /* אתה יכול לשנות למספר שאתה רוצה */
+    height: auto;   /* שומר על פרופורציות */
+  
+}
+.skills img {
+    width: 150px;   /* אתה יכול לשנות למספר שאתה רוצה */
+    height: auto;   /* שומר על פרופורציות */
+    margin-top: 10px;
+}
+.About{
+    display: flex;
+  text-align: left;
+  background-color: rgba(244, 212, 213);
+    align-items: center;
+  justify-content: center;
+}
+.about-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ממורכז */
+    justify-content: center;
+}
+.skills{
+   display: flex;
+  text-align: center;
+    align-items: center;
+  justify-content: center;
+}
+
+
+.contact {
+    background-color: #a1e4e8;
+
+}
+.contact h3 {
+    font-family: "Bungee Spice", sans-serif;
+    margin-bottom: 10px;
+}
+
+.contact p {
+
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(103, 174, 205);
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    transform: scale(1.05);
+    background-color:rgb(147, 183, 197);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+  }
+  .About, .skills {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Contact Section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+}
